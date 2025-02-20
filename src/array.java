@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class array {
@@ -31,6 +32,21 @@ public class array {
         System.out.println(matriks[2][2]);
         System.out.println("Panjang matriks: " + matriks.length);
         System.out.println("Panjang elemen matriks: " + matriks[0].length);
+
+        int[][][] kubus = new int[2][3][4]; // Array 3 dimensi
+        kubus[0][0][0] = 1;
+        kubus[0][0][1] = 2;
+        kubus[0][0][2] = 3;
+        System.out.println("array 3 dimensi = " + kubus[0][0][0]);
+
+        // Dynamic array
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Bambang");
+        list.add("Ucup");
+        list.add("Sugeng");
+        System.out.println(list.get(0));
+        System.out.println(list.get(2));
+        System.out.println("Panjang array: " + list.size());
 
     }
 }
